@@ -36,7 +36,7 @@ class Tree:
 def fileRead():
 	from sys import argv
 	script = argv
-	input_file = open('mp3.in', 'r')
+	input_file = open('inputs.in', 'r')
 
 	data = input_file.read()
 	input_file.close()
@@ -255,7 +255,7 @@ def finalCheck(finalState, currentState): # check if any of the current states a
 
 def execute():
   data = fileRead()
-  output_file = open('Salvacion.out', 'w') 
+  output_file = open('results.out', 'w') 
   inputData = data.split('\n')
 
   testCase = int(inputData[0])
